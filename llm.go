@@ -17,13 +17,13 @@ func (r Role) String() string {
 }
 
 type LlmMessage struct {
-	Role    Role
-	Content string
+	Role    Role   `json:"role"`
+	Content string `json:"content"`
 }
 
 type LlmAnswer struct {
-	Role    string
-	Content string
+	Role    string `json:"role"`
+	Content string `json:"content"`
 }
 
 type LLMer interface {
